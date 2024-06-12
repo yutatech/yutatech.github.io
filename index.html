@@ -10,21 +10,48 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <style>
+            .scroll-container {
+                position: relative;
+            }
+            .arrow {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 30px;
+                height: 30px;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                display: none; /* 初期状態では非表示 */
+            }
+            .arrow.left {
+                left: 0;
+            }
+            .arrow.right {
+                right: 0;
+            }
+            .scroll-container:hover .arrow {
+                display: flex; /* マウスオーバー時に表示 */
+            }
+        </style>
     </head>
     <body>
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="yutatech.github.io">Yuta's Portfolio</a>
+                <a class="navbar-brand" href="https://yutatech.github.io">Yuta's Portfolio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Other Site</a>
+                            <a class="nav-link dropdown-toggle active" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Other Site</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">X (Twitter)</a></li>
+                                <li><a class="dropdown-item" href="https://twitter.com/ciao_yuta">X (Twitter)</a></li>
                                 <li><a class="dropdown-item" href="http://yuta.techblog.jp">Blog</a></li>
                                 <li><a class="dropdown-item" href="https://github.com/yutatech/">GitHub</a></li>
                                 <li><a class="dropdown-item" href="https://www.youtube.com/@yuta9428">Youtube</a></li>
@@ -41,11 +68,136 @@
                 <h1>Yuta's Portfolio</h1>
                 <p class="lead">工事中...</p>
                 <p>Comming soon...</p>
+                <h1>製作物</h1>
+                    <h2>サッカーロボット 2014年</h2>
+                    <h2>サッカーロボット 2015年</h2>
+                    <h2>サッカーロボット 2016年</h2>
+                    <h2>サッカーロボット 2017年</h2>
+                    <h2>サッカーロボット 2018年</h2>
+                    <div class="card">
+                        <div class="card-header">Header</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card Subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                        <div class="card-footer">Footer</div>
+                    </div>
+                    <h2>サッカーロボット 2019年</h2>
+                    <h2>サッカーロボット 2021年</h2>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="scroll-container">
+                <div class="row flex-row flex-nowrap overflow-auto">
+                    <div class="col-6">
+                        <div class="card card-block h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card card-block h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card card-block h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card card-block h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow left">←</div>
+                <div class="arrow right">→</div>
             </div>
         </div>
+        <footer class="footer">
+            <div class="container">
+                <p class="text-muted"></p>
+            </div>
+        </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <!-- Floating arrow -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const scrollContainer = document.querySelector('.scroll-container .row');
+                const leftArrow = document.querySelector('.arrow.left');
+                const rightArrow = document.querySelector('.arrow.right');
+
+                leftArrow.addEventListener('click', function() {
+                    scrollContainer.scrollBy({
+                        left: -300,
+                        behavior: 'smooth'
+                    });
+                });
+
+                rightArrow.addEventListener('click', function() {
+                    scrollContainer.scrollBy({
+                        left: 300,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
     </body>
 </html>
