@@ -1,203 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Bare - Start Bootstrap Template</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
 
-        <style>
-            .scroll-container {
-                position: relative;
-            }
-            .arrow {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 30px;
-                height: 30px;
-                background-color: rgba(0, 0, 0, 0.5);
-                color: white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
-                display: none; /* 初期状態では非表示 */
-            }
-            .arrow.left {
-                left: 0;
-            }
-            .arrow.right {
-                right: 0;
-            }
-            .scroll-container:hover .arrow {
-                display: flex; /* マウスオーバー時に表示 */
-            }
-        </style>
-    </head>
-    <body>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="https://yutatech.github.io">Yuta's Portfolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Other Site</a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="https://twitter.com/ciao_yuta">X (Twitter)</a></li>
-                                <li><a class="dropdown-item" href="http://yuta.techblog.jp">Blog</a></li>
-                                <li><a class="dropdown-item" href="https://github.com/yutatech/">GitHub</a></li>
-                                <li><a class="dropdown-item" href="https://www.youtube.com/@yuta9428">Youtube</a></li>
-                                <li><a class="dropdown-item" href="https://www.linkedin.com/in/yuta-fujiyama-34a113268/">LinkedIn</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Page content-->
-        <div class="container">
-            <div class="text-center mt-5">
-                <h1>Yuta's Portfolio</h1>
-                <p class="lead">工事中...</p>
-                <p>Comming soon...</p>
-                <h1>製作物</h1>
-                    <h2>サッカーロボット 2014年</h2>
-                    <h2>サッカーロボット 2015年</h2>
-                    <h2>サッカーロボット 2016年</h2>
-                    <h2>サッカーロボット 2017年</h2>
-                    <h2>サッカーロボット 2018年</h2>
-                    <div class="card">
-                        <div class="card-header">Header</div>
-                        <div class="card-body">
-                            <h5 class="card-title">Card Title</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card Subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                        <div class="card-footer">Footer</div>
-                    </div>
-                    <h2>サッカーロボット 2019年</h2>
-                    <h2>サッカーロボット 2021年</h2>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+   <meta name="description" content="" />
+   <meta name="author" content="" />
+   <title>Yuta's Portfolio</title>
+   <!-- Favicon-->
+   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+   <!-- Core theme CSS (includes Bootstrap)-->
+   <link href="css/styles.css" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+   <!-- Responsive navbar-->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+         <a class="navbar-brand" href="https://yutatech.github.io">Yuta's Portfolio</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+               class="navbar-toggler-icon"></span></button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                     aria-expanded="false">Other Site</a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                     <li><a class="dropdown-item" target="_blank" href="https://twitter.com/ciao_yuta">X (Twitter)</a></li>
+                     <li><a class="dropdown-item" target="_blank" href="http://yuta.techblog.jp">Blog</a></li>
+                     <li><a class="dropdown-item" target="_blank" href="https://github.com/yutatech/">GitHub</a></li>
+                     <li><a class="dropdown-item" target="_blank" href="https://www.youtube.com/@yuta9428">Youtube</a></li>
+                     <li><a class="dropdown-item" target="_blank" href="https://www.linkedin.com/in/yuta-fujiyama-34a113268/">LinkedIn</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+   <!-- Page content-->
+   <div class="container">
+      <div class="text-center mt-5">
+         <h1>Yuta's Portfolio</h1>
+         <p class="lead">工事中...</p>
+         <p>Comming soon...</p>
+      </div>
+
+      <div class="text-center mt-5">
+         <h1>製作物</h1>
+         <h2>RoboCup Junior Soccer 2013 - 2017</h2>
+      </div>
+      <div class="scroll-container">
+         <div class="row flex-row flex-nowrap overflow-auto">
+            <div class="col-8 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+               <div class="card card-block h-auto">
+                  <img src="assets/pic/TANUKICHI_2017.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">RoboCup Junior 2017</h5>
+                     <p class="card-text">サッカー オープンにチーム「CIAO Tezukayama」として出場しました。3D CADを用いた本格的な機体設計ができるようになり、全ての機械部品をCNCで自作しました。プリント基板を設計するために、回路CADが扱えるようになりました。Arduino as ISPを用いた、親マイコンを経由した子マイコンへのファームウェアの書き込みシステムを開発しました。</p>
+                     <p class="card-text">全国大会 10位</p>
                   </div>
-                  <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+               </div>
+            </div>
+            <div class="col-8 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+               <div class="card card-block h-auto">
+                  <img src="assets/pic/TANUKICHI_2016.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">RoboCup Junior 2016</h5>
+                     <p class="card-text">サッカー オープンにチーム「CIAO Tezukayama」として出場しました。低コストで自作したセンサーをたくさん搭載しました。キッカーやドリブラーを作るために、2D CADを用いた機械部品の設計やCNCでの加工ができるようになりました。タッチディスプレイを搭載し、ロボット単体でセンサー値を見ることができるUIを作成しました。</p>
+                     <p class="card-text">全国大会出場</p>
                   </div>
-                  <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+               </div>
+            </div>
+            <div class="col-8 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+               <div class="card card-block h-auto">
+                  <img src="assets/pic/Robot_2015.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">RoboCup Junior 2015</h5>
+                     <p class="card-text">サッカー オープンに出場しました。マイコンにArduinoを使い始めました。センサーやモータードライバはダイセン製のものを使いながら、それらを繋げる配線や機械部品を自作しました。</p>
+                     <p class="card-text">京滋奈ブロック大会 4位</p>
                   </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+               </div>
             </div>
-            <div class="scroll-container">
-                <div class="row flex-row flex-nowrap overflow-auto">
-                    <div class="col-6">
-                        <div class="card card-block h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card card-block h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card card-block h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card card-block h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="arrow left">←</div>
-                <div class="arrow right">→</div>
+            <div class="col-8 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+               <div class="card card-block h-auto">
+                  <img src="assets/pic/Robot_2014.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">RoboCup Junior 2014</h5>
+                     <p class="card-text">サッカーA ライトウェイト プライマリに出場しました。オムニホイールを導入し、全方向移動ができるようになりました。</p>
+                     <p class="card-text">関西ブロック大会出場</p>
+                  </div>
+               </div>
             </div>
-        </div>
-        <footer class="footer">
-            <div class="container">
-                <p class="text-muted"></p>
+            <div class="col-8 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+               <div class="card card-block h-auto">
+                  <img src="assets/pic/Robot_2013.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">RoboCup Junior 2013</h5>
+                     <p class="card-text">サッカーA ライトウェイト プライマリに出場しました。初めてのサッカーロボットを作った年でした。ダイセン電子工業製のサッカーロボット「e-Gadget」を改良しました。</p>
+                     <p class="card-text">関西ブロック大会出場</p>
+                  </div>
+               </div>
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+         </div>
+         <div class="arrow left">←</div>
+         <div class="arrow right">→</div>
+      </div>
 
-        <!-- Floating arrow -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const scrollContainer = document.querySelector('.scroll-container .row');
-                const leftArrow = document.querySelector('.arrow.left');
-                const rightArrow = document.querySelector('.arrow.right');
 
-                leftArrow.addEventListener('click', function() {
-                    scrollContainer.scrollBy({
-                        left: -300,
-                        behavior: 'smooth'
-                    });
-                });
 
-                rightArrow.addEventListener('click', function() {
-                    scrollContainer.scrollBy({
-                        left: 300,
-                        behavior: 'smooth'
-                    });
-                });
-            });
-        </script>
-    </body>
+      <div class="text-center mt-5">
+         <h2>RoboCup Junior Soccer 2018</h2>
+      </div>
+      <div class="row align-items-start justify-content-center">
+         <div class="col-10">
+            <img src="assets/pic/TANUKICHI_2018_main.jpg" style="width:100%; aspect-ratio: 16/9; object-fit: cover;" alt="..."/>
+            <div class="row align-items-start" style="margin-bottom:1rem;">
+               <div class="col">
+                  <p>サッカー オープンにチーム「CIAO Tezukayama」として出場しました。これまでの1人でロボット1台をを作る開発体制を一新し、メンバーそれぞれが得意分野を担当する開発体制を導入しました。ハードウェア開発と組み込みソフトウェアの実装、チームリーダーを担当しました。自作の全方位カメラを用いたボールとゴールの認識を新たに開発しました。</p>
+                  <p>世界大会 SuperTeam優勝、Best Innovation Award受賞</p>
+               </div>
+            </div>
+            
+
+            <div class="row align-items-start" style="margin-bottom: 2rem;">
+               <div class="col-8 video-container">
+                  <video class="img-fluid buttoned-video" autoplay muted playsinline controlslist="nodownload nofullscreen noremoteplayback">
+                     <source src="assets/mov/tipkick_2018.mov"/>
+                  </video>
+                  <img src="assets/component/play_button.png" class="play-button">
+               </div>
+               <div class="col-4 align-self-center">
+                  <p>大会初のチップキックを開発しました。チップキックは人間でいう、つま先でボールを蹴り上げるようなキックです。</p>
+               </div>
+            </div>
+
+
+            <div class="row align-items-start">
+               <div class="col-4 align-self-center">
+                  <p >このロボットの内部構造をブログで紹介しました。各機構を分解して要素技術を解説しています。</p>
+                  <a target="_blank" href="http://yuta.techblog.jp/archives/11900221.html" class="btn btn-primary">Go Blog</a>
+               </div>
+               <div class="col-8">
+                  <img src="assets/pic/TANUKICHI_2018_teardown.jpg" style="width:100%; aspect-ratio: 16/9; object-fit: cover;" alt="..."/>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="text-center mt-5">
+         <h2>RoboCup Junior Soccer 2019</h2>
+      </div>
+      <div class="row align-items-start justify-content-center">
+         <div class="col-10">
+            <img src="assets/pic/TANUKICHI_2019_main.jpg" style="width:100%; aspect-ratio: 16/9; object-fit: cover;"
+               alt="..." />
+            <div class="row align-items-start" style="margin-bottom:1rem;">
+               <div class="col">
+                  <p>サッカー オープンにチーム「CIAOTezukayama」として出場しました。オフェンスロボットのハードウェアとソフトウェア全レイヤー、ディフェンスロボットのハードウェアと組み込みソフトウェア、そしてチームリーダーを担当しました。メインMCUに新たにSTM32を導入し、高周波数での制御や繊細なディスプレイグラフィックスを実現しました。大会発のマルチアングルキッカーを開発し、ロボットの姿勢を傾けることなく狙った方向へのキックができるようになりました。</p>
+                  <p>全国大会 3位、ベストプレゼンテーション賞 受賞</p>
+                  <a target="_blank" href="http://yuta.techblog.jp/archives/18004418.html" class="btn btn-primary align-self-end">Go Blog 大会結果報告</a>
+               </div>
+            </div>
+      
+      
+            <div class="row align-items-start" style="margin-bottom: 2rem;">
+               <div class="col-8 video-container">
+                  <video class="img-fluid buttoned-video" autoplay muted playsinline controlslist="nodownload nofullscreen noremoteplayback">
+                     <source src="assets/mov/vs_defense_2019.mp4"/>
+                  </video>
+                  <img src="assets/component/play_button.png" class="play-button">
+               </div>
+               <div class="col-4 align-self-center">
+                  <p>全方位カメラに加えて簡易的なLiDARを搭載しています。キーパーロボットを認識し、避けてゴールへキックします。ロボット後方にも搭載したドリブラーを用いて、キーパーロボットから見ると突然目の前にボールが現れるように見える、魔法のようなシュートを実装しました。</p>
+               </div>
+            </div>
+
+
+            <div class="row align-items-start" style="margin-bottom: 2rem;">
+               <div class="col-4 align-self-center">
+                  <p>オフェンスロボットの内部構造をブログで紹介しました。</p>
+                  <a target="_blank" href="http://yuta.techblog.jp/archives/18296046.html" class="btn btn-primary">Go Blog</a>
+               </div>
+               <div class="col-8">
+                  <img src="assets/pic/TANUKICHI_2019_offense_teardown.jpg" style="width:100%; aspect-ratio: 16/9; object-fit: cover;" alt="..."/>
+               </div>
+            </div>
+
+
+            <div class="row align-items-start">
+               <div class="col-8">
+                  <img src="assets/pic/TANUKICHI_2019_defence_teardown.jpg" style="width:100%; aspect-ratio: 16/9; object-fit: cover;" alt="..."/>
+               </div>
+               <div class="col-4 align-self-center">
+                  <p >ディフェンスロボットの内部構造をブログで紹介しました。</p>
+                  <a target="_blank" href="http://yuta.techblog.jp/archives/18709413.html" class="btn btn-primary">Go Blog</a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <div class="text-center mt-5">
+         <h2>RoboCup Junior Soccer 2021</h2>
+      </div>
+      <div class="row align-items-start justify-content-center">
+         <div class="col-10">
+            <img src="assets/pic/Team_Leopard.jpg" style="width:100%; aspect-ratio: 16/9; object-fit: cover;" alt="..."/>
+            <div class="row align-items-start" style="margin-bottom:1rem;">
+               <div class="col">
+                  <p>世界大会 優勝、SuperTeam 優勝</p>
+                  <a target="_blank" href="http://yuta.techblog.jp/archives/29703600.html" class="btn btn-primary align-self-end">Go Blog 大会結果報告</a>
+               </div>
+            </div>
+            
+
+            <div class="row align-items-start" style="margin-bottom: 2rem;">
+               <div class="col-8">
+                  <iframe style="width: 100%; aspect-ratio: 16/9;" src="https://www.youtube.com/embed/Lgoi_pQrCUY?si=Sr1GS7cCZAIENMmW&amp;controls=0&amp;autoplay=1&amp;mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+               </div>
+               <div class="col-4 align-self-center">
+                  <p>世界大会での評価対象となるVideoです。大会に向けてチームが開発してきた技術について紹介することが求められます。</p>
+                  <p>動画の作成全般を担当担当しました。</p>
+               </div>
+            </div>
+
+
+            <div class="row align-items-start">
+               <div class="col-4 align-self-center">
+                  <p>東工大学生リーダーシップ賞の選考時に作成したプレゼンのスライドです。</p>
+               </div>
+               <div class="col-8">
+                  <iframe src="assets/pdf/ロボカップ世界大会優勝とそれまでの活動.pdf" style="width: 100%; aspect-ratio: 16/9;" frameborder="0" style="border:none;"></iframe>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+
+   <footer class="footer">
+      <div class="container">
+         <p class="text-muted"></p>
+      </div>
+   </footer>
+
+   <!-- Floating arrow -->
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+   <!-- Bootstrap core JS-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- Core theme JS-->
+   <script src="js/scripts.js"></script>
+
+
+</body>
+
 </html>
