@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var options = {
     root: null, // nullの場合、ビューポートがルート
     rootMargin: '0px',
-    threshold: 0.8 // 10%以上表示された時にコールバックを実行
+    threshold: 0.8 // 80%以上表示された時にコールバックを実行
   };
 
   // Intersection Observerのインスタンスを作成
