@@ -6,25 +6,38 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 
-// 横スクロールの矢印表示
 document.addEventListener('DOMContentLoaded', function() {
-  const scrollContainer = document.querySelector('.scroll-container .row');
-  const leftArrow = document.querySelector('.arrow.left');
-  const rightArrow = document.querySelector('.arrow.right');
+  var scroll_container = document.querySelector('.scroll-container');
 
-  // 横スクロールできるヒントの矢印  
-  $('.scroll-container').hover(
-    function () {
-      console.log("hover");
-      $(this).find('.arrow').each(function () {
-        $(this).css('display', 'flex');
-        $(this).fadeOut(1500);
-      })
-    },
-    function (){}
-  );
+  //---- 横スクロールの矢印表示 ----
+  // Intersection Observerのコールバック関数
+  function onIntersection(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        $(entry.target).find('.arrow').each(function () {
+          $(this).css('display', 'flex');
+          $(this).fadeOut(1500);
+        })
+      }
+    });
+  }
 
-  // ドロップダウンのアニメーション
+  // Intersection Observerのオプション
+  var options = {
+    root: null, // nullの場合、ビューポートがルート
+    rootMargin: '0px',
+    threshold: 0.8 // 10%以上表示された時にコールバックを実行
+  };
+
+  // Intersection Observerのインスタンスを作成
+  var observer = new IntersectionObserver(onIntersection, options);
+
+  // 対象要素を監視
+  observer.observe(scroll_container);
+
+
+
+  //---- ドロップダウンのアニメーション ----
   $('.dropdown').on('show.bs.dropdown', function () {
     $(this).find('.dropdown-menu').each(function(){
       $(this).fadeIn(500);
@@ -36,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
     })
   })
 
+  //---- 動画の自動再生と再生ボタン -----
   const containers = document.querySelectorAll('.video-container');
 
   containers.forEach(function(container){
