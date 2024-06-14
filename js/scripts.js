@@ -15,8 +15,11 @@ document.addEventListener('DOMContentLoaded', function() {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         $(entry.target).find('.arrow').each(function () {
-          $(this).css('display', 'flex');
-          $(this).fadeOut(1500);
+          var $arrow = $(this);
+          $arrow.css('display', 'flex');
+          setTimeout(function() {
+            $arrow.fadeOut(1000);
+          }, 1000);
         })
       }
     });
