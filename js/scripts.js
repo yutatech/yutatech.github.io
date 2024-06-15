@@ -7,7 +7,7 @@
 // Use this file to add JavaScript to your project
 
 document.addEventListener('DOMContentLoaded', function() {
-  var scroll_container = document.querySelector('.scroll-container');
+  // var scroll_container = document.querySelector('.scroll-container');
 
   //---- 横スクロールの矢印表示 ----
   // Intersection Observerのコールバック関数
@@ -36,7 +36,10 @@ document.addEventListener('DOMContentLoaded', function() {
   var observer = new IntersectionObserver(onIntersection, options);
 
   // 対象要素を監視
-  observer.observe(scroll_container);
+  // observer.observe(scroll_container);
+  document.querySelectorAll('.scroll-container').forEach(function (scroll_container) {
+    observer.observe(scroll_container);
+  });
 
 
 
