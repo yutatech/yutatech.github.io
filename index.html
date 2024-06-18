@@ -112,6 +112,23 @@
 
 
       <div class="text-center mt-5">
+         <h2>WRO football 2018</h2>
+      </div>
+      <div class="row align-items-start justify-content-center">
+         <div class="col-12 col-md-10">
+            <img src="assets/pic/WRO2018.jpg" style="width:100%; aspect-ratio: 16/7; object-fit: cover;" alt="..."/>
+            <div class="row align-items-start" style="margin-bottom:1rem;">
+               <div class="col">
+                  <p>右2台のロボットをチームで製作しました。ハードウェアとソフトウェアをそれぞれ部分的に担当しました。LEGOで製作した4輪オムニホイールのロボットでサッカーの試合をします。RoboCup Junior Soccerで培った技術をLEGOに応用して日本大会で優勝し、日本代表として世界大会に出場しました。</p>
+                  <p>世界大会 Best 16</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+      <div class="text-center mt-5">
          <h2>RoboCup Junior Soccer 2018</h2>
       </div>
       <div class="row align-items-start justify-content-center">
@@ -460,6 +477,66 @@
                </div>
             </div>
          </div>
+      </div>
+      
+      <div class="scroll-container">
+         <div class="row flex-row flex-nowrap overflow-auto">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+               <div class="card card-block h-100">
+                  <img src="assets/pic/NHK2023_robomaster.jpg" class="card-img-top" style="width:100%; aspect-ratio: 4/3; object-fit: cover;" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">モータのフィードバック制御基板</h5>
+                     <p class="card-text"></p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+               <div class="card card-block h-100">
+                  <div class="card-img-top" style="background-color:darkgray; width: 100%; aspect-ratio: 4/3; display: flex; justify-content: center; align-items: end;">
+                     <p style="color: white; font-weight: 200; font-size: 2rem; ">画像準備中. . .</p>
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">モータの電流制御</h5>
+                        電流入力電圧出力のPID制御器と外乱オブザーバによるモータの逆起電力補償によってモータの電流制御を実装しました。先人が実装した電流制御を改良し、上位層との通信の効率化とソースコードのリファクタリングによる軽量化・効率化を行いました。
+                     <p class="card-text"></p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+               <div class="card card-block h-auto">
+                  <div class="card-img-top" style="background-color:darkgray; width: 100%; aspect-ratio: 4/3; display: flex; justify-content: center; align-items: end;">
+                     <p style="color: white; font-weight: 200; font-size: 2rem; ">画像準備中. . .</p>
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">外乱を保障したモータの速度制御の汎用化</h5>
+                        速度入力・電流出力のPID制御器と外乱オブザーバによる外乱補償を組み合わせた速度制御をモータドライバ基板内に実装しました。上位層からPIDゲインと同定したモデルパラーメータを受け取り、それに応じてローカルフィードバックを行います。上位層で行っていたフィードバック制御をローカルに実装し直すことで追従性能を向上させました。
+                     <p class="card-text"></p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+               <div class="card card-block h-100">
+                  <div class="card-img-top" style="background-color:darkgray; width: 100%; aspect-ratio: 4/3; display: flex; justify-content: center; align-items: end;">
+                     <p style="color: white; font-weight: 200; font-size: 2rem; ">画像準備中. . .</p>
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">Google Apps Script + Slack API</h5>
+                     <p class="card-text">Google Apps ScriptとSlack APIを組み合わせたSlack Appを作成しました。学内施設の日毎の予約のために、その日の利用者から情報を収集し自動で申請するアプリケーションです。Slackのアプリ上でUIを操作するとGoogle Documentを自動で編集し、申請者全員の情報を集めて大学に自動でメールを送信します。</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+               <div class="card card-block h-100">
+                  <img src="assets/pic/NHK2023_multi_wireless.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                     <h5 class="card-title">多重通信モージュール</h5>
+                     <p class="card-text">学生ロボコンの会場は電波環境が劣悪です。一方で競技のルールで無線通信によってロボットを操縦することが義務付けられました。複数の電波帯域・規格で同時に通信し、最も早く情報が到達する経路を自動で選択して通信を無線化するモジュールを開発しました。</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="arrow left">←</div>
+         <div class="arrow right">→</div>
       </div>
 
    </div>
