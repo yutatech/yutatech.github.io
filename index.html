@@ -13,7 +13,7 @@
    <!-- Core theme CSS (includes Bootstrap)-->
    <link href="css/styles.css" rel="stylesheet" />
    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-
+   
    <meta property="og:title" content="Yuta's Portfolio">
    <meta property="og:type" content="website">
    <meta property="og:url" content="https://yutatech.github.io">
@@ -33,24 +33,6 @@
       <div class="container">
          <a class="navbar-brand align-self-center" href="#"><img src="/assets/favicon.ico" alt="Yuta's Portfolio" width="30" height="30"></a>
          <a class="navbar-brand" href="https://yutatech.github.io">Yuta's Portfolio</a>
-         <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
-               class="navbar-toggler-icon"></span></button>
-         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle active" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                     aria-expanded="false">Other Site</a>
-                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                     <li class="nav-item"><a class="nav-link active" target="_blank" href="https://twitter.com/ciao_yuta">X (Twitter)</a></li>
-                     <li class="nav-item"><a class="nav-link active" target="_blank" href="http://yuta.techblog.jp">Blog</a></li>
-                     <li class="nav-item"><a class="nav-link active" target="_blank" href="https://github.com/yutatech/">GitHub</a></li>
-                     <li class="nav-item"><a class="nav-link active" target="_blank" href="https://www.youtube.com/@yuta9428">Youtube</a></li>
-                     <li class="nav-item"><a class="nav-link active" target="_blank" href="https://www.linkedin.com/in/yuta-fujiyama-34a113268/">LinkedIn</a></li>
-                  </ul>
-               </li>
-            </ul>
-         </div> -->
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -68,9 +50,14 @@
    <!-- Page content-->
    <div class="container">
       <div class="text-center mt-5">
-         <h1>Yuta's Portfolio</h1>
-         <p class="lead">工事中...</p>
-         <p>Comming soon...</p>
+         <h2>Profile</h2>
+         <div class="row align-items-start justify-content-center">
+            <div class="col-4  col-sm-4  col-md-3 col-lg-2 col-xl-2;">
+               <img src="assets/pic/TANUKICHI_2016.jpg" class="card-img-top" style="border-radius: 50%; object-fit: cover; width: 100%; aspect-ratio: 1.0; margin-top: 1rem; margin-bottom: 1rem;" alt="...">
+            </div>
+            <div class="col-12 col-sm-12 col-md-7 col-lg-6 col-xl-4 align-self-center">
+               <p>ロボコン歴10年以上のロボットエンジニアです。</p>
+            </div>
       </div>
 
       <div class="text-center mt-5">
@@ -535,7 +522,7 @@
                      <p style="color: white; font-weight: 200; font-size: 2rem; ">画像準備中. . .</p>
                   </div>
                   <div class="card-body">
-                     <h5 class="card-title">外乱を保障したモータの速度制御の汎用化</h5>
+                     <h5 class="card-title">外乱を補償したモータの速度制御の汎用化</h5>
                      <p class="card-text">目標速度に対して入力電流を計算するPID制御器と外乱オブザーバによる外乱補償を組み合わせた速度制御をモータドライバ基板内に実装しました。上位層からPIDゲインと同定したモデルパラーメータを受け取り、それに応じてローカルフィードバックを行います。上位層で行っていたフィードバック制御をローカルに実装し直すことで追従性能を向上させました。</p>
                   </div>
                </div>
